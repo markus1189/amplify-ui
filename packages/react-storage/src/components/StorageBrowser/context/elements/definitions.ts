@@ -39,6 +39,7 @@ type ButtonElementVariant =
   | 'refresh'
   | 'search-submit'
   | 'sort'
+  | 'start-action'
   | 'table-data'
   | PaginateVariant;
 
