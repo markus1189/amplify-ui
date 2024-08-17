@@ -17,7 +17,7 @@ export const FIELD_VALIDATION_MESSAGE =
 
 export const CreateFolderControls = (): React.JSX.Element => {
   const [, handleUpdateState] = useControl({ type: 'ACTION_SELECT' });
-  const [{ history }] = useControl({ type: 'NAVIGATE' });
+  const [{ path }] = useControl({ type: 'NAVIGATE' });
 
   const [
     {
@@ -55,7 +55,7 @@ export const CreateFolderControls = (): React.JSX.Element => {
     }
   };
 
-  const prefix = `${history.join('')}${data}`;
+  const prefix = `${path}${data}`;
 
   let primaryProps = {
     onClick: () => {
